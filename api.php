@@ -18,16 +18,16 @@ class itemRecord {
 	public $specialorder;
 }
 foreach ($items as $item) {
-  $result 		                = mysql_query("SELECT item.item_no,item.description,item.price,item.quantity_on_hand,item.quantity_on_order,sum(specialorder.quantity) FROM item,specialorder WHERE item.item_no='$item' AND specialorder.item_no='$item';");
-  $array                      = mysql_fetch_row($result);
-  $myItem                     = new itemRecord;
-  $myItem->item_no 	          = $array[0];
-  $myItem->description        = $array[1];
-  $myItem->price	            = $array[2];
-  $myItem->quantity_on_hand   = $array[3];
-  $myItem->quantity_on_order  = $array[4];
-  $myItem->specialorder       = $array[5];
-  $arraytotal[$index]         = $myItem;
+  $result = mysql_query("SELECT item.item_no,item.description,item.price,item.quantity_on_hand,item.quantity_on_order,sum(specialorder.quantity) FROM item,specialorder WHERE item.item_no='$item' AND specialorder.item_no='$item';");
+  $array = mysql_fetch_row($result);
+  $myItem = new itemRecord;
+  $myItem->item_no = $array[0];
+  $myItem->description = $array[1];
+  $myItem->price = $array[2];
+  $myItem->quantity_on_hand = $array[3];
+  $myItem->quantity_on_order = $array[4];
+  $myItem->specialorder = $array[5];
+  $arraytotal[$index] = $myItem;
   $index++;
   }
 
