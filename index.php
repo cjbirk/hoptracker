@@ -2,35 +2,35 @@
 
   <head>
    <title>HOP TRACKER</title>
-    <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-    <link href='http://fonts.googleapis.com/css?family=Montserrat|Roboto' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat|Roboto' rel='stylesheet' type='text/css'>
 
-    <script language="javascript" type="text/javascript" src="js/hoptrack.js"></script>
+<script language="javascript" type="text/javascript" src="js/hoptrack.js"></script>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-     <style type="text/css">
+<style type="text/css">
 
-     </style>
+</style>
 
-     <center><img src="img/hops.svg" height="100" width="100"></center>
+<center><img src="img/hops.svg" height="100" width="100">
 
-     <h2><center>HOP RHIZOME TRACKER</center></h2>
+<h2>HOP RHIZOME TRACKER</h2>
 
-     <center>This data on this page refreshes automatically every 3 seconds.</center></br>
+This data on this page refreshes automatically every 3 seconds.</br>
 
-     <center><div id="output"></div></center>
+<div id="output"></div>
 
-     <script id="source" language="javascript" type="text/javascript">
+<script id="source" language="javascript" type="text/javascript">
 
-     </script>
+</script>
 
-     </br><center>Questions? Comments? Concerns? E-mail <a href="mailto:it@keystonehomebrew.com">Charles Birk</center>
+     </br>Questions? Comments? Concerns? E-mail <a href="mailto:it@keystonehomebrew.com">Charles Birk</center>
 
   </body>
 

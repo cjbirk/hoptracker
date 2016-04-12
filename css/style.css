@@ -1,70 +1,70 @@
 body {
-  background-color: #005A31;
+ background-color: #005A31;
 }
 
 a {
-    color: hotpink;
+ color: hotpink;
 }
 
 h1, h2 {
-  font: 400 45px/0.5 'Montserrat';
-  color: white;
+ font: 400 45px/0.5 'Montserrat';
+ color: white;
 }
 
 body {
-  font: 400 14px/1.5 'Montserrat';
-  color: white;
+ font: 400 14px/1.5 'Montserrat';
+ color: white;
 }
 
 table {
-  border-collapse: collapse;
-  font: 400 14px/1.5 'Roboto';
-  color: white;
-  border: 1;
-  border-style: ridge;
-  text-align:  left;
+ border-collapse: collapse;
+ font: 400 14px/1.5 'Roboto';
+ color: white;
+ border: 1;
+ border-style: ridge;
+ text-align:  left;
 }
 
 th {
-  font: 400 14px/1.5 'Roboto';
-  padding: 10px;
-  color: white;
-//  background-color: #DAA520;
-  background-color: #4F9F64;
-  border: 1;
-  border-style: ridge;
-  border-color: black;
-  text-align:  left;
+ font: 400 14px/1.5 'Roboto';
+ padding: 10px;
+ color: white;
+ //  background-color: #DAA520;
+ background-color: #4F9F64;
+ border: 1;
+ border-style: ridge;
+ border-color: black;
+ text-align:  left;
 }
 
 tr {
-  font: 400 14px/1.5 'Roboto';
-  color: white;
-  border: 1;
-  border-style: ridge;
-  border-color: black;
-  text-align:  left;
+ font: 400 14px/1.5 'Roboto';
+ color: white;
+ border: 1;
+ border-style: ridge;
+ border-color: black;
+ text-align:  left;
 }
 
 td.off {
-  color: black;
-  background-color: white;
+ color: black;
+ background-color: white;
 }
 
 td.negative {
-  color: white;
-  border-color: black;
-  background-color: #B22222;
+ color: white;
+ border-color: black;
+ background-color: #B22222;
 
 }
 
 td {
-  font-family: 400 14px/1.5 'Roboto', Times, serif;
-  padding: 2px;
-  color: white;
-  background-color: #7FBF90;
-  border: 1;
-  border-style: ridge;
-  border-color: black;
-  text-align:  left;
+ font-family: 400 14px/1.5 'Roboto', Times, serif;
+ padding: 2px;
+ color: white;
+ background-color: #7FBF90;
+ border: 1;
+ border-style: ridge;
+ border-color: black;
+ text-align:  left;
 }
