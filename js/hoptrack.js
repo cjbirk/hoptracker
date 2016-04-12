@@ -32,12 +32,16 @@ var hoptrack = function ()
                 var desc = data[i].description;
 		var description = desc.substring(desc.indexOf(":") + 1,desc.length);
                 var price       = parseFloat(data[i].price);
-		var qoh		= parseInt(data[i].quantity_on_hand);
-		var qoo		= parseInt(data[i].quantity_on_order);
-		var so		= parseInt(data[i].specialorder);
-                var ats         = qoh - so;
-                var atr         = (qoh + qoo) - so;
-		
+		var qoh	= parseInt(data[i].quantity_on_hand);
+		var qoo	= parseInt(data[i].quantity_on_order);
+		var so	= parseInt(data[i].specialorder);
+    var ats = 0;
+    var atr = 0;
+    if ( so != null) {
+        ats = qoh - so;
+        atr = (qoh + qoo) - so;
+    }
+
 		var notintheRed = "</td><td>";
 		var actualTd	= "";
 		if (ats < 0)
@@ -59,7 +63,7 @@ var hoptrack = function ()
 			    "</td><td>" +
 				    qoo +
 			    "</td><td>" +
-				     so +
+				     (so == null)?"":so +
 			    "</td></tr>";
          }
                 // Display the contents of the array
