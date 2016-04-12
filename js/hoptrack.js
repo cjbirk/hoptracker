@@ -35,12 +35,20 @@ var hoptrack = function ()
 		var qoh	= parseInt(data[i].quantity_on_hand);
 		var qoo	= parseInt(data[i].quantity_on_order);
 		var so	= parseInt(data[i].specialorder);
+
     var ats = 0;
     var atr = 0;
-    if ( so != null) {
+    var soString = "0";
+    if ( !isNaN(so) ) {
         ats = qoh - so;
         atr = (qoh + qoo) - so;
+        soString = so.toString();
     }
+    else {
+        ats = qoh;
+        atr = qoh + qoo;
+    }
+    
 
 		var notintheRed = "</td><td>";
 		var actualTd	= "";
@@ -63,7 +71,7 @@ var hoptrack = function ()
 			    "</td><td>" +
 				    qoo +
 			    "</td><td>" +
-				     (so == null)?"":so +
+				     soString +
 			    "</td></tr>";
          }
                 // Display the contents of the array
