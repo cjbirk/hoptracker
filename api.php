@@ -1,6 +1,6 @@
 <?php
 
-include 'db.php';
+require 'db.php';
 // Connect to MySQL database
 $con = mysql_connect($host,$user,$password);
 $dbs = mysql_select_db($databaseName,$con);
