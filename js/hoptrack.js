@@ -39,7 +39,8 @@ var hoptrack = function ()
              var ats = 0;
              var atr = 0;
              var soString = "0";
-             if ( !isNaN(so) ) {
+             //if ( !isNaN(so) ) {
+             if ( so > 0 ) { 
               ats = qoh - so;
               atr = (qoh + qoo) - so;
               soString = so.toString();
